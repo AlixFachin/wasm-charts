@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: wheat ;
+}
+
+.graph-container {
+    box-sizing: border-box;
+    padding: 1em;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.toolbar {
+    background-color: lightgrey;
+    box-sizing: border-box;
+    padding: 0.5em;
+    margin: 0.5em;
+}

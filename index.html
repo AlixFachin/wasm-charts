@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="./src/wasm-sort.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting in C++ with WASM</title>
+  </head>
+  <body>
+    
+    <main>
+      <h1>Those are two charts with initial arrays!</h1>
+      <div class="toolbar">
+        <button id="btnReset">Reset Charts</button>
+        <button id="btnSort">Sort</button>
+      </div>
+      <div id="container1" class="graph-container">
+        <canvas id="chart1" width="400" height="400"></canvas>
+      </div>
+      <div id="container2" class="graph-container">
+        <canvas id="chart2" width="400" height="400"></canvas>
+      </div>
+    </main>
+    <script type="module" src="/src/wasm-sort.js"></script>
+    <script src="/sort.js"></script>
+  </body>
+</html>
