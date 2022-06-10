@@ -10,16 +10,24 @@
   <body>
     
     <main>
-      <h1>Those are two charts with initial arrays!</h1>
+      <h1>Trying out sorting with WebAssembly</h1>
       <div class="toolbar">
-        <button id="btnReset">Reset Charts</button>
-        <button id="btnSort">Sort</button>
+        <a href="#" class="button" id="btnReset">Reset Charts</a>
+        <a href="#" class="button" id="btnSort">Sort</a>
       </div>
-      <div id="container1" class="graph-container">
-        <canvas id="chart1" width="400" height="400"></canvas>
+      <div id="graph-collection">
+        <div id="container1" class="graph-container">
+          <canvas id="chart1" width="400" height="400"></canvas>
+        </div>
+        <div id="container2" class="graph-container">
+          <canvas id="chart2" width="400" height="400"></canvas>
+        </div>
       </div>
-      <div id="container2" class="graph-container">
-        <canvas id="chart2" width="400" height="400"></canvas>
+      <div class="toolbar">        
+        <a href="#" class="button" id="btnCompare">Compare</a>
+      </div>
+      <div class="graph-container">
+        <canvas id="chart3" width="400" height="400"></canvas>
       </div>
     </main>
     <script type="module" src="/src/wasm-sort.js"></script>

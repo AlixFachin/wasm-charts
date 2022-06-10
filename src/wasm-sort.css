@@ -1,10 +1,40 @@
+
+:root {
+    --amber: #FFBE0B;
+    --orange-accent: #FB5607;
+    --back-color-2: #662C91;
+    --front-color-2: #FF006E;
+    --main-color: #1789FC;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
-    background-color: wheat ;
+    background-color: var(--main-color) ;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#graph-collection {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1000px) {
+    #graph-collection {
+        flex-direction: row;
+    }
 }
 
 .graph-container {
@@ -12,12 +42,32 @@ main {
     padding: 1em;
     border: 1px solid grey;
     border-radius: 5px;
-    margin-bottom: 1em;
+    margin: 1em;
+    background-color: var(--amber);
 }
 
 .toolbar {
-    background-color: lightgrey;
+    background-color: var(--back-color-2);
     box-sizing: border-box;
-    padding: 0.5em;
+    border-radius: 15px;
+    padding: 2em;
     margin: 0.5em;
+}
+
+a.button, a.button :active, a.button:focus, a.button:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a.button:hover {
+    padding: 15px;
+}
+
+a.button {
+    background-color: var(--amber);
+    border: 1px solid var(--orange-accent);
+    border-radius: 5px;
+    margin: 1em;
+    padding: 10px;
+    transition: padding 0.5s;
 }
